@@ -1,0 +1,30 @@
+<%- include ('partials/header') %>
+
+<div class="container">
+<h1 class="text-center">ADD A NEW CAMP SITE</h1>
+
+<div class="jumbotron">
+    <form action="/sites" method="POST" class="form-group ">
+        <div class="form-group">
+            <input type="text" name="name" placeholder="Enter name of the Campsite">
+        </div>
+            
+        <div class="form-group">
+            <input type="text" name="image" placeholder="Enter the Image url">
+        </div>
+
+        <div class="form-group">
+            <input type="text" name="description" placeholder="Enter the Description">
+        </div>
+
+        <div class="form-group">
+            <button name="submit" class="btn btn-success btn-lg ">SUBMIT</button>
+        </div>
+
+    </form>
+    
+</div>
+<a class="btn btn-primary btn-lg " href="/sites">Go Back to Sites Page</a>
+</div>
+
+<%- include ('partials/footer') %>

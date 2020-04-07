@@ -1,0 +1,35 @@
+<%- include ('partials/header') %>
+
+<div class="container">
+    <header class="container">
+        <div class ="jumbotron">
+            
+                <h2>YOU'VE REACHED THE <strong>CAMP WITH CHIRAG</strong>  HOME PAGE</h2>
+                <a class="btn btn-primary btn-lg" href="/sites/new">Add a new Campsite</a>
+        </div>
+    </header>
+    <div class="row text-center" style="display: flex; flex-wrap: wrap;">
+        
+            <% data.forEach(function(site){ %>
+                <div class="col-md-4 col-lg-6">
+                    <div class="thumbnail ">
+                        <image src="<%= site.image %>" ></image>
+                    </div>
+                    <!-- <div class="caption">
+                        <h4><%= site.name %></h4>
+                    </div> -->
+                    <a href="/sites/<%= site._id %>" class="btn btn-primary">INFO</a>
+                </div> 
+            <% }); %>         
+                
+
+    </div>
+
+        
+</div>
+
+    
+</div>
+
+
+<%- include ('partials/footer') %>
